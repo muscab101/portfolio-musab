@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+    <title>portfolio-musab</title>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        #arrow{
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%,
+            100% {
+    transform: translateY(0px);
+ }
+ 50% {
+    transform: translateY(-20px);
+  }
+}
+
+
+
+
+
+    </style>
+
+</head>
+
+<body class=" bg-[#0e0f10] h-[300vh]" >
+
+
+    <header  class=" flex justify-between px-[5rem] py-[1.2rem] items-center shadow-md" style=" background-color: transparent; backdrop-filter: blur(10px); position: fixed; width: 100%; height: 13vh;">
+        <h3 data-aos="fade-down" data-aos-duration="1500"  class=" text-white text-[1.5rem] font-semibold ">musab</h3>
+        <ul  class=" flex gap-[1rem]">
+            <li data-aos="fade-down" data-aos-duration="1500"><a   class=" text-gray-400" href="#about">About</a></li>
+            <li data-aos="fade-down" data-aos-duration="2000"><a   class=" text-gray-400" href="#skills">Skills</a></li>
+            <li data-aos="fade-down" data-aos-duration="2500" ><a  class=" text-gray-400" href="">Project</a></li>
+            <li data-aos="fade-down" data-aos-duration="3000"><a   class=" text-gray-400" href="">Contact</a></li>
+        </ul>
+
+        <button style=" cursor: pointer;" id="btn" data-aos="fade-down" data-aos-duration="2500" ><i style=" color: white;" class="fi fi-rr-brightness"></i></button>
+    </header>
+
+
+
+    <section class=" pt-[150px] text-center">
+        <h1 data-aos="fade-up" data-aos-duration="1500" class=" text-[4rem] text-white font-bold">Hi, I'm Musab</h1>
+        <p data-aos="zoom-in-up" data-aos-duration="1500" class=" text-[2rem] text-gray-300">Front-end Developer</p>
+        <p data-aos="zoom-in-up" data-aos-duration="2000" class=" text-[17px] text-gray-300">Crafting beautiful, performant web experiences with modern technologies</p>
+        <div class=" flex gap-[1rem] justify-center mt-[20px]">
+        <button data-aos="fade-up-right"  data-aos-duration="1500" class=" w-[120px] h-[40px] rounded-sm shadow-md shadow-white   bg-white">Veiw My Work</button>
+        <button  data-aos="fade-up-left"  data-aos-duration="1500" class=" w-[120px] h-[40px] rounded-sm border-[1px] border-white text-white   bg-transparent">Get In Touch</button>
+        </div>
+
+        <p id="arrow" class=" animate-bounceCustom mt-[70px]"><i style=" color: white; font-size: 25px" class="fi fi-rr-arrow-small-down" ></i></p>
+        <!-- <p id="arrow" class="animate-bounceCustom">  <i style=" color: white; font-size: 25px" class="fi fi-rr-angle-small-down" ></i></p> -->
+    </section>
+     
+
+
+    <section id="about" class=" mt-[170px] text-center">
+        <h1 data-aos="fade-up" data-aos-duration="1500" class=" text-[3rem] font-bold text-white ">About me</h1>
+        
+        <div class=" flex justify-center">
+        <div data-aos="fade-up" data-aos-duration="2000" class=" w-[60%] text-gray-400 mt-[40px] h-[50vh] bg-[#0e0f10] rounded-md shadow-sm shadow-gray-500 hover:shadow-md hover:shadow-gray-600 duration-300 ease-in-out text-start">
+            <p class=" pl-[30px] pt-[50px] text-[18px]">I'm a passionate developer with a love for creating elegant solutions to complex problems. With <br> expertise in modern web technologies, I specialize in building responsive, accessible, and performant <br> applications.</p>
+
+            <p class=" pl-[30px] mt-[15px] text-[18px]">My journey in web development started several years ago, and since then, I've worked on numerous <br> projects ranging from small business websites to large-scale enterprise applications.</p>
+            <p class=" pl-[30px] mt-[15px] text-[18px]">When I'm not coding, you can find me exploring new technologies, contributing to open-source <br> projects, or sharing my knowledge with the developer community.</p>
+            
+        </div>
+        </div>
+    </section>
+
+
+
+    <section id="skills" class=" text-center mt-[320px]">
+        <h1 data-aos="zoom-in" data-aos-duration="1500"  class=" text-[3rem] font-bold text-white">My Skills</h1>
+
+        <div class="group">
+        <div id="all-card" class=" flex justify-center gap-[1rem]">
+            <div data-aos="fade-right"
+     data-aos-duration="2000" class="w-[25%] text-gray-400 mt-[40px] h-[25vh] bg-[#0e0f10] rounded-md shadow-sm shadow-gray-500 hover:shadow-md hover:shadow-gray-600 duration-300 ease-in-out text-start">
+                <div class=" pl-[20px] pt-[20px]"><i style=" font-size: 26px;" class="fi fi-rr-square-code"></i></div>
+                <h1 class=" text-[1.4rem] font-semibold text-white pl-[20px] py-[2px]">Frontend Development</h1>
+                <p class=" pl-[20px]">React, Next.js, TypeScript, Tailwind CSS</p>
+            </div>
+
+            <div data-aos="fade-down"
+     data-aos-duration="2000" class="w-[25%] text-gray-400 mt-[40px] h-[25vh] bg-[#0e0f10] rounded-md shadow-sm shadow-gray-500 hover:shadow-md hover:shadow-gray-600 duration-300 ease-in-out text-start">
+                <div class=" pl-[20px] pt-[20px]"><i style=" font-size: 26px;" class="fi fi-rr-database-management"></i></div>
+                <h1 class=" text-[1.4rem] font-semibold text-white pl-[20px] py-[2px]">Backend Development</h1>
+                <p class=" pl-[20px]">Node.js, Express, PostgreSQL, MongoDB</p>
+            </div>
+
+
+            <div data-aos="fade-left"
+     data-aos-duration="2s000" class="w-[25%] text-gray-400 mt-[40px] h-[25vh] bg-[#0e0f10] rounded-md shadow-sm shadow-gray-500 hover:shadow-md hover:shadow-gray-600 duration-300 ease-in-out text-start">
+                <div class=" pl-[20px] pt-[20px]"><i style=" font-size: 26px;" class="fi fi-rr-customize-computer"></i></div>
+                <h1 class=" text-[1.4rem] font-semibold text-white pl-[20px] py-[2px]">I/UX Design</h1>
+                <p class=" pl-[20px]">Figma, Responsive Design, Accessibility</p>
+            </div>
+
+
+            
+            
+
+
+           
+
+
+            
+        </div>
+        
+        </div>
+        
+        <div class="group">
+        <div data-aos="fade-right"
+     data-aos-duration="2000" id="all-card" class=" flex justify-center gap-[1rem]">
+            <div class="w-[25%] text-gray-400 mt-[40px] h-[25vh] bg-[#0e0f10] rounded-md shadow-sm shadow-gray-500 hover:shadow-md hover:shadow-gray-600 duration-300 ease-in-out text-start">
+                <div class=" pl-[20px] pt-[20px]"><i style=" font-size: 26px;" class="fi fi-rr-mobile-notch"></i></div>
+                <h1 class=" text-[1.4rem] font-semibold text-white pl-[20px] py-[2px]">Mobile Development</h1>
+                <p class=" pl-[20px]">React Native, Progressive Web Apps</p>
+            </div>
+
+            <div data-aos="fade-up"
+     data-aos-duration="2000" class="w-[25%] text-gray-400 mt-[40px] h-[25vh] bg-[#0e0f10] rounded-md shadow-sm shadow-gray-500 hover:shadow-md hover:shadow-gray-600 duration-300 ease-in-out text-start">
+                <div class=" pl-[20px] pt-[20px]"><i style=" font-size: 26px;" class="fi fi-rr-bolt"></i></div>
+                <h1 class=" text-[1.4rem] font-semibold text-white pl-[20px] py-[2px]">Performance</h1>
+                <p class=" pl-[20px]">Optimization, SEO, Core Web Vitals</p>
+            </div>
+
+
+            <div data-aos="fade-left"
+     data-aos-duration="2s000" class="w-[25%] text-gray-400 mt-[40px] h-[25vh] bg-[#0e0f10] rounded-md shadow-sm shadow-gray-500 hover:shadow-md hover:shadow-gray-600 duration-300 ease-in-out text-start">
+                <div class=" pl-[20px] pt-[20px]"><i style=" font-size: 26px;" class="fi fi-rr-world"></i></div>
+                <h1 class=" text-[1.4rem] font-semibold text-white pl-[20px] py-[2px]">Deployment</h1>
+                <p class=" pl-[20px]">Vercel, AWS, Docker, CI/CD</p>
+            </div>
+
+
+            
+            
+
+
+           
+
+
+            
+        </div>
+        
+        </div>
+
+       
+
+    </section>
+
+
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="script.js"></script>
+
+    
+</body>
+</html>
